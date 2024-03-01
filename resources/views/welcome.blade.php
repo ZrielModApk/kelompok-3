@@ -13,8 +13,10 @@
         <!-- Styles -->
         
     </head>
-    <body class="antialiased">
-       <h1>Selamat Datang Di Website Kami</h1>
-       <p>Mohon maaf jika ada kekuarangan.</p>
+    <body class="antialiased">`
+        <div style="text-align: center; display: flex; justify-content: center; height: 100vh; background-color: blue; color: white;">
+         <h1>SELAMAT DATANG</h1>
+            <p>Mohon maaf jika ada kekurangan yak</p>
+        </div>
     </body>
 </html>
