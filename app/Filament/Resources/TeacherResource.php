@@ -35,6 +35,7 @@ class TeacherResource extends Resource
                 Card::make()
                     ->schema([
                         TextInput::make('name')->placeholder('Aditya')->required(),
+                        TextInput::make('subject')->label('Jurusan')->placeholder('Rekayasa Perangkat Lunak')->required(),
                         TextInput::make('subject')->label('Mata Pelajaran')->placeholder('Bahasa Indonesia')->required(),
                         FileUpload::make('profile')->directory('teachers'),
                     ])
@@ -47,6 +48,7 @@ class TeacherResource extends Resource
         return $table
             ->columns([
                 TextColumn::make('name')->sortable()->searchable(),
+                TextColumn::make('subject')->label('Jurusan')->searchable(),
                 TextColumn::make('subject')->label('Mata Pelajaran')->searchable(),
                 ImageColumn::make('profile'),
             ])
